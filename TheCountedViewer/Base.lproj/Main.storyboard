@@ -27,7 +27,7 @@
         <!--About-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="About" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="About" customClass="AboutViewController" customModule="TheCountedViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
