@@ -1,0 +1,6 @@
+framework module Pods_TheCountedViewerUITests {
+  umbrella header "Pods-TheCountedViewerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A8A0066F844F5E0104A6E8 /* Pods_TheCountedViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */; };
+		611DAF09917F5C9A96EB66A5 /* Pods_TheCountedViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4C21E1CF1B1A8A6C01933 /* Pods_TheCountedViewer.framework */; };
+		983448DEDBC21772C86F7CB6 /* Pods_TheCountedViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */; };
 		B65319A11D3073D400CCBE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A01D3073D400CCBE9C /* AppDelegate.swift */; };
 		B65319A31D3073D400CCBE9C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A21D3073D400CCBE9C /* MapViewController.swift */; };
 		B65319A51D3073D400CCBE9C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A41D3073D400CCBE9C /* AboutViewController.swift */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202E3DF658D9E9BA6AA225D0 /* Pods-TheCountedViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerUITests/Pods-TheCountedViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62DF30EA567385D9AE3892E8 /* Pods-TheCountedViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerUITests/Pods-TheCountedViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB4C21E1CF1B1A8A6C01933 /* Pods_TheCountedViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		768D30BD001A6C968D54FA98 /* Pods-TheCountedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960A17F7FCBF579C4B11D640 /* Pods-TheCountedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B653199D1D3073D400CCBE9C /* TheCountedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCountedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65319A01D3073D400CCBE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65319A21D3073D400CCBE9C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		B65319C21D3073D400CCBE9C /* TheCountedViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCountedViewerUITests.swift; sourceTree = "<group>"; };
 		B65319C41D3073D400CCBE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65319D01D31762B00CCBE9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA1E32C157D0196877CF3687 /* Pods-TheCountedViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DEA79D1B525EED860297CB0A /* Pods-TheCountedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.release.xcconfig"; sourceTree = "<group>"; };
+		FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65319D11D31762B00CCBE9C /* MapKit.framework in Frameworks */,
+				611DAF09917F5C9A96EB66A5 /* Pods_TheCountedViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983448DEDBC21772C86F7CB6 /* Pods_TheCountedViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +87,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A8A0066F844F5E0104A6E8 /* Pods_TheCountedViewerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7A37CE197D08817EB88ABB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				768D30BD001A6C968D54FA98 /* Pods-TheCountedViewer.debug.xcconfig */,
+				DEA79D1B525EED860297CB0A /* Pods-TheCountedViewer.release.xcconfig */,
+				960A17F7FCBF579C4B11D640 /* Pods-TheCountedViewerTests.debug.xcconfig */,
+				BA1E32C157D0196877CF3687 /* Pods-TheCountedViewerTests.release.xcconfig */,
+				62DF30EA567385D9AE3892E8 /* Pods-TheCountedViewerUITests.debug.xcconfig */,
+				202E3DF658D9E9BA6AA225D0 /* Pods-TheCountedViewerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B65319941D3073D400CCBE9C = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +115,8 @@
 				B65319B61D3073D400CCBE9C /* TheCountedViewerTests */,
 				B65319C11D3073D400CCBE9C /* TheCountedViewerUITests */,
 				B653199E1D3073D400CCBE9C /* Products */,
+				4F7A37CE197D08817EB88ABB /* Pods */,
+				D4DB8AD348556BE9BD5C3CEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +162,16 @@
 			path = TheCountedViewerUITests;
 			sourceTree = "<group>";
 		};
+		D4DB8AD348556BE9BD5C3CEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4C21E1CF1B1A8A6C01933 /* Pods_TheCountedViewer.framework */,
+				8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */,
+				FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65319C71D3073D400CCBE9C /* Build configuration list for PBXNativeTarget "TheCountedViewer" */;
 			buildPhases = (
+				DC9BEF15B2D09527D535FF73 /* [CP] Check Pods Manifest.lock */,
 				B65319991D3073D400CCBE9C /* Sources */,
 				B653199A1D3073D400CCBE9C /* Frameworks */,
 				B653199B1D3073D400CCBE9C /* Resources */,
+				F6C5974CB92B7A55007993F4 /* [CP] Embed Pods Frameworks */,
+				5993B0854B5F366C3A03403B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65319CA1D3073D400CCBE9C /* Build configuration list for PBXNativeTarget "TheCountedViewerTests" */;
 			buildPhases = (
+				9A59AEF4C3DE3C93C8B4F450 /* [CP] Check Pods Manifest.lock */,
 				B65319AF1D3073D400CCBE9C /* Sources */,
 				B65319B01D3073D400CCBE9C /* Frameworks */,
 				B65319B11D3073D400CCBE9C /* Resources */,
+				CB0855724C4B3412CDC1D4A3 /* [CP] Embed Pods Frameworks */,
+				0961FD36EFF511EAEC8D19F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65319CD1D3073D400CCBE9C /* Build configuration list for PBXNativeTarget "TheCountedViewerUITests" */;
 			buildPhases = (
+				30E0C6D6AB13CDB44663446F /* [CP] Check Pods Manifest.lock */,
 				B65319BA1D3073D400CCBE9C /* Sources */,
 				B65319BB1D3073D400CCBE9C /* Frameworks */,
 				B65319BC1D3073D400CCBE9C /* Resources */,
+				012BD14A8472BD3C5023EBFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +306,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012BD14A8472BD3C5023EBFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCountedViewerUITests/Pods-TheCountedViewerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0961FD36EFF511EAEC8D19F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30E0C6D6AB13CDB44663446F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5993B0854B5F366C3A03403B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A59AEF4C3DE3C93C8B4F450 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0855724C4B3412CDC1D4A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9BEF15B2D09527D535FF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C5974CB92B7A55007993F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B65319991D3073D400CCBE9C /* Sources */ = {
@@ -408,6 +579,7 @@
 		};
 		B65319C81D3073D400CCBE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768D30BD001A6C968D54FA98 /* Pods-TheCountedViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -420,6 +592,7 @@
 		};
 		B65319C91D3073D400CCBE9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA79D1B525EED860297CB0A /* Pods-TheCountedViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -432,6 +605,7 @@
 		};
 		B65319CB1D3073D400CCBE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960A17F7FCBF579C4B11D640 /* Pods-TheCountedViewerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheCountedViewerTests/Info.plist;
@@ -444,6 +618,7 @@
 		};
 		B65319CC1D3073D400CCBE9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1E32C157D0196877CF3687 /* Pods-TheCountedViewerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TheCountedViewerTests/Info.plist;
@@ -456,6 +631,7 @@
 		};
 		B65319CE1D3073D400CCBE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62DF30EA567385D9AE3892E8 /* Pods-TheCountedViewerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TheCountedViewerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -467,6 +643,7 @@
 		};
 		B65319CF1D3073D400CCBE9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 202E3DF658D9E9BA6AA225D0 /* Pods-TheCountedViewerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TheCountedViewerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

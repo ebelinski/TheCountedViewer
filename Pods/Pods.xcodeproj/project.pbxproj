@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00912E93DD7F881DB216ED42E565BBDB /* WeakCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B885B57F57C5C8FF92D600A87316C17 /* WeakCache.swift */; };
+		0264DBAE9AE54D90FF87820400C90D20 /* Pods-TheCountedViewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 510900E48838777B925FEFB56A2F8FD1 /* Pods-TheCountedViewerTests-dummy.m */; };
+		05417132AEDE9E79EE81658E3C9436CB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B9B40CAECFA3606F1197750994320 /* Request.swift */; };
+		054BE00AAB707C828EDBD40BF9CCC70D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B55D826BC788B3F0BC25F034539BD2 /* Configuration.swift */; };
+		0AB5A0EEDE4B39ADC05ECF4D6FA5B64D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		11F9B5892C1B1D9B496431AECB4C62AD /* Info-OSX.plist in Sources */ = {isa = PBXBuildFile; fileRef = 1A85E622E9D4E1D0B2D62C881C6605FA /* Info-OSX.plist */; };
+		1EA8C4C428F66257F042485EABFF73DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		249D91A364A14D56027FC2F3EFDAF49C /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0B49E250E9EBBF43BC1DAF6060AD0 /* Deprecations.swift */; };
+		26AA6D2BAE1ABEE9FC40D969A774B6E7 /* Pods-TheCountedViewerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0371B6B0E8DF7C7F49FB27065DBEDED2 /* Pods-TheCountedViewerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5ED50338E0D5C38A7511BAE134976A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B951BD11159FC2374DF63D56AB3A3F8A /* Resource.swift */; };
+		2D55DA31309065222FA99870130BC13A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		357F3B76935786FB7B585A6A61A36237 /* ResourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BB2B63862799502052CD9E5A1D5F7 /* ResourceObserver.swift */; };
+		44F3F2C9CC30279ACA20750974A019FD /* ResourceStatusOverlay.xib in Sources */ = {isa = PBXBuildFile; fileRef = A5BFB825AF788DFFA22076A3F92B6F22 /* ResourceStatusOverlay.xib */; };
+		49AEEC5A0310B771CCDE72B7D783169C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEECA29777B0E7EC9EF400E8005B6BFA /* Entity.swift */; };
+		5B3186C4E50556DF207CFC1C8521D1C7 /* PersistentCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEC96AC86899E0B68CC797509906C25 /* PersistentCache.swift */; };
+		658258407DB95AA239C28D8013EBC23C /* ARC+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8B713718F08DD8341D30A9DA5AA13 /* ARC+Siesta.swift */; };
+		7193A945A2F4203E8D37CFC593A5DB75 /* Siesta-ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140217D44D3844C118188D8A4FFF9C4 /* Siesta-ObjC.swift */; };
+		748312C41A9697B5AA7EFB2B9EB24FBC /* Siesta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0CC57568C2B43FCEBD34B32A547FE75 /* Siesta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A853BEE372C2064589BC98C9CCD7F8 /* Regex+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9ACA0B507BDD3C5A82DE3B3D20D20 /* Regex+Siesta.swift */; };
+		867D8E92F122B9FCA80419D0BC808E92 /* ResourceStatusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A3AED7C15F9288EB19D10F3B6D5EC2 /* ResourceStatusOverlay.swift */; };
+		91772D6EDD634972A4FD94FFD196EFD0 /* Siesta.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A3259A03C0C3C9B320A37C7F816117 /* Siesta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95F445F528DD09272C08AAAE3CAB544F /* Collection+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF63544FBC9E675C8CC85E9A35038DB /* Collection+Siesta.swift */; };
+		A3AC51B3280E25A7663F66FCCE7AF485 /* Pods-TheCountedViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C06E272A6261FE4AF30AA4D959E2F1CF /* Pods-TheCountedViewer-dummy.m */; };
+		B15B176105200E48BD22566772701993 /* Siesta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E67B9874108E594FDCC8823F547F75 /* Siesta-dummy.m */; };
+		B276417E67541F848CB00046BBABAD1D /* ResponseTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8AD6049A9CF37B01C999DE757840B /* ResponseTransformer.swift */; };
+		B457867B4795331926D3FE28D6A5C83C /* RequestCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269B890FC8EC3A81C2DD74DFED272BA /* RequestCallbacks.swift */; };
+		B718F6148C9C4536E720D415D56DCAFE /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0CE93875CA39D825BCEEB2C340C0C /* Progress.swift */; };
+		BA4984B31B03EFBE475CEC4615E6DE23 /* Info-iOS.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0AAFD0EC379F47BC9FDCC8F15D916F44 /* Info-iOS.plist */; };
+		BA9011540382FD1DA9EA7846C7E794D4 /* Pods-TheCountedViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9E729300D5D10529DDF577C9315201 /* Pods-TheCountedViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD1250197D4C235F28A85077DDAC9A83 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43DC19C850ADF8918A74F94290E71E1 /* Networking.swift */; };
+		C1C739F2280D22DC3753BCA97D24054A /* RequestCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44615711C8B91ED9DEB68D44682AB1B2 /* RequestCreation.swift */; };
+		C75687B6F0F80EAD86E277E23CBC6ADC /* Networking-NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F2458336F29AB18E5D8A12A19C07FE /* Networking-NSURLSession.swift */; };
+		C976FE7CC82B5D1508369A18AF9932B0 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5F18EC037B0CCA2E18E3CC9424319 /* RemoteImageView.swift */; };
+		DA7B76A62E73C70B8677237A27DE1FEF /* String+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03149B1898CF40BD415DE016824729 /* String+Siesta.swift */; };
+		DA7DF8816056C3BC851C5C8C330264FB /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F05AA96CE72AA3BC3E3E8A2935990 /* NetworkRequest.swift */; };
+		DFA35CC073C68CEB74B2B4E50F144CA8 /* Pods-TheCountedViewerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D14B9696E8D1027F0BEBF7D80160D4C /* Pods-TheCountedViewerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13F4276848B6B0CAED8485BB5EDC37A /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162228A83A3FD15CC2EF1356E4B8927 /* ProgressTracker.swift */; };
+		E2AA55A1229001B63BD523B0AD6CD63D /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA038C426A991ADE4B5F18994819C38B /* Logging.swift */; };
+		E34D2463F51C30964E2E286F29E81FD1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373DD2CB9B8C2752F4549AB29A3839A5 /* Error.swift */; };
+		E68D33BE09827A183C17B9B919E67146 /* NSURL+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87692FD2D94F3159ABB78EDCF3292D4 /* NSURL+Siesta.swift */; };
+		EA0B9F5D257F9BC39A916CEF562725DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		ECC20BF47435BDB46F9BD9E45C4CE5DF /* GCD+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25F0E0991CA39DE4A873952AED9D92 /* GCD+Siesta.swift */; };
+		EDCB296F24655EE1AC884A6596421806 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDEE1E8A2106AE3699828914DEE2684 /* Service.swift */; };
+		F4FDB929A603E16FEE204FC0EF3CCC26 /* ResourceStatusOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BFB825AF788DFFA22076A3F92B6F22 /* ResourceStatusOverlay.xib */; };
+		F7E3F0033FA03E18960B36185B165800 /* ConfigurationPatternConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BD6B58FA6078183BF453BC5AEEEE38 /* ConfigurationPatternConvertible.swift */; };
+		FA72C7B645D2AD46B447BA74492FC7CB /* DebugFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33385D9FAA739857CFECA286B118F325 /* DebugFormatting.swift */; };
+		FDAAEECC480CAEEC4A7AE84D00F769DF /* Pods-TheCountedViewerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5F1FC1C044E3CB25F1B44A5C42BEC /* Pods-TheCountedViewerUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		942FF699206E600BDDE70C23A8C20A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B0E4ACB8D0909B02CFD64C8DD22A3FC;
+			remoteInfo = Siesta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0371B6B0E8DF7C7F49FB27065DBEDED2 /* Pods-TheCountedViewerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheCountedViewerTests-umbrella.h"; sourceTree = "<group>"; };
+		06F2458336F29AB18E5D8A12A19C07FE /* Networking-NSURLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking-NSURLSession.swift"; path = "Source/Networking-NSURLSession.swift"; sourceTree = "<group>"; };
+		08E36A360F57067ED0351AA29946B8FF /* Pods-TheCountedViewerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewerTests-resources.sh"; sourceTree = "<group>"; };
+		0AAFD0EC379F47BC9FDCC8F15D916F44 /* Info-iOS.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Source/Info-iOS.plist"; sourceTree = "<group>"; };
+		0AC8AD6049A9CF37B01C999DE757840B /* ResponseTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseTransformer.swift; path = Source/ResponseTransformer.swift; sourceTree = "<group>"; };
+		0C628713D7A94954E11CF4491E47F22E /* Pods-TheCountedViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CF0B49E250E9EBBF43BC1DAF6060AD0 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Source/Support/Deprecations.swift; sourceTree = "<group>"; };
+		107CECDC53A36EADA545AA56A8FD4725 /* Pods-TheCountedViewerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewerTests-frameworks.sh"; sourceTree = "<group>"; };
+		1269B890FC8EC3A81C2DD74DFED272BA /* RequestCallbacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCallbacks.swift; path = Source/Request/RequestCallbacks.swift; sourceTree = "<group>"; };
+		13653616642EB573FC1C120027F2AD92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151BF9A3FF77F312E0C21A7892A90ECD /* Pods_TheCountedViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A85E622E9D4E1D0B2D62C881C6605FA /* Info-OSX.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Info-OSX.plist"; path = "Source/Info-OSX.plist"; sourceTree = "<group>"; };
+		1B9518CBC7B4188BB68A30D4EC0CC0C2 /* Pods-TheCountedViewerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheCountedViewerUITests.modulemap"; sourceTree = "<group>"; };
+		1CF5F1FC1C044E3CB25F1B44A5C42BEC /* Pods-TheCountedViewerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheCountedViewerUITests-dummy.m"; sourceTree = "<group>"; };
+		1EDEE1E8A2106AE3699828914DEE2684 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Source/Service.swift; sourceTree = "<group>"; };
+		270F2AE72C203183D65697C335163800 /* Siesta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Siesta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C52284808DB1607A9BC8FA2CB09D75F /* Pods-TheCountedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		2D14B9696E8D1027F0BEBF7D80160D4C /* Pods-TheCountedViewerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheCountedViewerUITests-umbrella.h"; sourceTree = "<group>"; };
+		31BD6B58FA6078183BF453BC5AEEEE38 /* ConfigurationPatternConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigurationPatternConvertible.swift; path = Source/ConfigurationPatternConvertible.swift; sourceTree = "<group>"; };
+		33385D9FAA739857CFECA286B118F325 /* DebugFormatting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugFormatting.swift; path = Source/Support/DebugFormatting.swift; sourceTree = "<group>"; };
+		373DD2CB9B8C2752F4549AB29A3839A5 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		37C2818B69257EC1D5DEBA27F46A547F /* Pods_TheCountedViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B88EA7BB3886711375A4DA75D8AAE64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44615711C8B91ED9DEB68D44682AB1B2 /* RequestCreation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCreation.swift; path = Source/Request/RequestCreation.swift; sourceTree = "<group>"; };
+		510900E48838777B925FEFB56A2F8FD1 /* Pods-TheCountedViewerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheCountedViewerTests-dummy.m"; sourceTree = "<group>"; };
+		51E9359B2056C342AA6398533A10CF1A /* Siesta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-prefix.pch"; sourceTree = "<group>"; };
+		51F12F81880C04850756A76F9F6EE3B2 /* Pods-TheCountedViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheCountedViewer.modulemap"; sourceTree = "<group>"; };
+		52230EF0D09DDC1323338410DC45B3C8 /* Pods-TheCountedViewerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheCountedViewerTests.modulemap"; sourceTree = "<group>"; };
+		56B8B713718F08DD8341D30A9DA5AA13 /* ARC+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ARC+Siesta.swift"; path = "Source/Support/ARC+Siesta.swift"; sourceTree = "<group>"; };
+		5C03149B1898CF40BD415DE016824729 /* String+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Siesta.swift"; path = "Source/Support/String+Siesta.swift"; sourceTree = "<group>"; };
+		60D3EE92359FF29170F776F51AB1C5E1 /* Siesta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Siesta.xcconfig; sourceTree = "<group>"; };
+		6162228A83A3FD15CC2EF1356E4B8927 /* ProgressTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressTracker.swift; path = Source/Request/ProgressTracker.swift; sourceTree = "<group>"; };
+		61A9ACA0B507BDD3C5A82DE3B3D20D20 /* Regex+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Regex+Siesta.swift"; path = "Source/Support/Regex+Siesta.swift"; sourceTree = "<group>"; };
+		69B9623F2519BCA0D312E07998C8260C /* Pods-TheCountedViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A9E729300D5D10529DDF577C9315201 /* Pods-TheCountedViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheCountedViewer-umbrella.h"; sourceTree = "<group>"; };
+		6B4E4389C5E9A7247FDE475B6420C043 /* Pods-TheCountedViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheCountedViewer-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B885B57F57C5C8FF92D600A87316C17 /* WeakCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakCache.swift; path = Source/Support/WeakCache.swift; sourceTree = "<group>"; };
+		6DFA4808C1CE585FA837AA5AEA40AFAB /* Pods-TheCountedViewerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheCountedViewerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		765BC8A5118BAE97ECD1C99E20031846 /* Pods-TheCountedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78BBA065A6DF8A72BC2B9BAC62E01A25 /* Pods-TheCountedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewer.release.xcconfig"; sourceTree = "<group>"; };
+		7F46A85E0A984470D56110661FB04B04 /* Pods-TheCountedViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheCountedViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		831D13A9A5EE981F43D9BE4BBFDA592B /* Pods-TheCountedViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheCountedViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		83A5F18EC037B0CCA2E18E3CC9424319 /* RemoteImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteImageView.swift; path = Source/UI/RemoteImageView.swift; sourceTree = "<group>"; };
+		8857BA815C40A191A2DD4D27AD666BB5 /* Pods-TheCountedViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewer-frameworks.sh"; sourceTree = "<group>"; };
+		8C5F05AA96CE72AA3BC3E3E8A2935990 /* NetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = Source/Request/NetworkRequest.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B5F8D8D7C32BC6B1B78EB5E3F1F63DE /* Pods-TheCountedViewerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheCountedViewerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FC664CED06898BB54894EED144AF4B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BFB825AF788DFFA22076A3F92B6F22 /* ResourceStatusOverlay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ResourceStatusOverlay.xib; path = Source/UI/ResourceStatusOverlay.xib; sourceTree = "<group>"; };
+		A87692FD2D94F3159ABB78EDCF3292D4 /* NSURL+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Siesta.swift"; path = "Source/Support/NSURL+Siesta.swift"; sourceTree = "<group>"; };
+		ADA0CE93875CA39D825BCEEB2C340C0C /* Progress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Progress.swift; path = Source/Support/Progress.swift; sourceTree = "<group>"; };
+		AEC8C5B794E02B6E33BF20D123EDBEE2 /* Pods_TheCountedViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73FCB1E889A5EE97868BB38F47FE65B /* Pods-TheCountedViewerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheCountedViewerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B951BD11159FC2374DF63D56AB3A3F8A /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Source/Resource.swift; sourceTree = "<group>"; };
+		C06E272A6261FE4AF30AA4D959E2F1CF /* Pods-TheCountedViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheCountedViewer-dummy.m"; sourceTree = "<group>"; };
+		C140217D44D3844C118188D8A4FFF9C4 /* Siesta-ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Siesta-ObjC.swift"; path = "Source/Support/Siesta-ObjC.swift"; sourceTree = "<group>"; };
+		C24BB2B63862799502052CD9E5A1D5F7 /* ResourceObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceObserver.swift; path = Source/ResourceObserver.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEECA29777B0E7EC9EF400E8005B6BFA /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/Entity.swift; sourceTree = "<group>"; };
+		CEF63544FBC9E675C8CC85E9A35038DB /* Collection+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Siesta.swift"; path = "Source/Support/Collection+Siesta.swift"; sourceTree = "<group>"; };
+		D0CC57568C2B43FCEBD34B32A547FE75 /* Siesta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-umbrella.h"; sourceTree = "<group>"; };
+		D141CC18FBC4AEE98EF88B620297F98C /* Pods-TheCountedViewerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D4A3AED7C15F9288EB19D10F3B6D5EC2 /* ResourceStatusOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceStatusOverlay.swift; path = Source/UI/ResourceStatusOverlay.swift; sourceTree = "<group>"; };
+		D5A3259A03C0C3C9B320A37C7F816117 /* Siesta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Siesta.h; path = Source/Support/Siesta.h; sourceTree = "<group>"; };
+		DA1C684FD6A9D5AF1F03F446E4815B39 /* Siesta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Siesta.modulemap; sourceTree = "<group>"; };
+		E0B219FE8BD5C4CE86295B08FAF3718A /* Pods-TheCountedViewerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheCountedViewerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5B55D826BC788B3F0BC25F034539BD2 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
+		E6E67B9874108E594FDCC8823F547F75 /* Siesta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Siesta-dummy.m"; sourceTree = "<group>"; };
+		EB25F0E0991CA39DE4A873952AED9D92 /* GCD+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GCD+Siesta.swift"; path = "Source/Support/GCD+Siesta.swift"; sourceTree = "<group>"; };
+		EDEC96AC86899E0B68CC797509906C25 /* PersistentCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentCache.swift; path = Source/PersistentCache.swift; sourceTree = "<group>"; };
+		F00B9B40CAECFA3606F1197750994320 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request/Request.swift; sourceTree = "<group>"; };
+		F43DC19C850ADF8918A74F94290E71E1 /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Source/Networking.swift; sourceTree = "<group>"; };
+		F50A12A8ED0F9771E7090B0AB86BBF19 /* Pods-TheCountedViewer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewer-resources.sh"; sourceTree = "<group>"; };
+		F7764FCD186DC3B324612561F4759FDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA038C426A991ADE4B5F18994819C38B /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Source/Support/Logging.swift; sourceTree = "<group>"; };
+		FFD9911C13934E08AA83F6010DF225BB /* Pods-TheCountedViewerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheCountedViewerUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		870AAC540BDB42C942F710138051F809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA8C4C428F66257F042485EABFF73DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973C22A9FAB67C996167D912254764C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D55DA31309065222FA99870130BC13A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4297572F097DC1E636C0912D46EABC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB5A0EEDE4B39ADC05ECF4D6FA5B64D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5FAD9CA0FE55134AC3E5BE1BB2FA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0B9F5D257F9BC39A916CEF562725DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B4D57B841F3C6AD0A51280D343EB942 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1DF232F569A4E07070626A37CDD05C6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13653616642EB573FC1C120027F2AD92 /* Info.plist */,
+				DA1C684FD6A9D5AF1F03F446E4815B39 /* Siesta.modulemap */,
+				60D3EE92359FF29170F776F51AB1C5E1 /* Siesta.xcconfig */,
+				E6E67B9874108E594FDCC8823F547F75 /* Siesta-dummy.m */,
+				51E9359B2056C342AA6398533A10CF1A /* Siesta-prefix.pch */,
+				D0CC57568C2B43FCEBD34B32A547FE75 /* Siesta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Siesta";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46983A4CF216868D5F7C3B1C2E87D9FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DD4C64090C0BC37DEA2C14D2254A3A9 /* Siesta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5EBFECA0A5237B06EEC56AA2C5985A8C /* Pods-TheCountedViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FC664CED06898BB54894EED144AF4B6 /* Info.plist */,
+				52230EF0D09DDC1323338410DC45B3C8 /* Pods-TheCountedViewerTests.modulemap */,
+				9B5F8D8D7C32BC6B1B78EB5E3F1F63DE /* Pods-TheCountedViewerTests-acknowledgements.markdown */,
+				B73FCB1E889A5EE97868BB38F47FE65B /* Pods-TheCountedViewerTests-acknowledgements.plist */,
+				510900E48838777B925FEFB56A2F8FD1 /* Pods-TheCountedViewerTests-dummy.m */,
+				107CECDC53A36EADA545AA56A8FD4725 /* Pods-TheCountedViewerTests-frameworks.sh */,
+				08E36A360F57067ED0351AA29946B8FF /* Pods-TheCountedViewerTests-resources.sh */,
+				0371B6B0E8DF7C7F49FB27065DBEDED2 /* Pods-TheCountedViewerTests-umbrella.h */,
+				765BC8A5118BAE97ECD1C99E20031846 /* Pods-TheCountedViewerTests.debug.xcconfig */,
+				831D13A9A5EE981F43D9BE4BBFDA592B /* Pods-TheCountedViewerTests.release.xcconfig */,
+			);
+			name = "Pods-TheCountedViewerTests";
+			path = "Target Support Files/Pods-TheCountedViewerTests";
+			sourceTree = "<group>";
+		};
+		605C6396B2A57019E1AFB93DB187DF57 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B50CB2CBA7B1026D6EBB8CA9A0361 /* Pods-TheCountedViewer */,
+				5EBFECA0A5237B06EEC56AA2C5985A8C /* Pods-TheCountedViewerTests */,
+				ADB7958FE14F63802FBAC1570AD5BDDC /* Pods-TheCountedViewerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6DD4C64090C0BC37DEA2C14D2254A3A9 /* Siesta */ = {
+			isa = PBXGroup;
+			children = (
+				7B1243649DBEE683E2FDC1165B01F5BF /* Core */,
+				0B4D57B841F3C6AD0A51280D343EB942 /* Resources */,
+				1DF232F569A4E07070626A37CDD05C6F /* Support Files */,
+			);
+			path = Siesta;
+			sourceTree = "<group>";
+		};
+		7B1243649DBEE683E2FDC1165B01F5BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				56B8B713718F08DD8341D30A9DA5AA13 /* ARC+Siesta.swift */,
+				CEF63544FBC9E675C8CC85E9A35038DB /* Collection+Siesta.swift */,
+				E5B55D826BC788B3F0BC25F034539BD2 /* Configuration.swift */,
+				31BD6B58FA6078183BF453BC5AEEEE38 /* ConfigurationPatternConvertible.swift */,
+				33385D9FAA739857CFECA286B118F325 /* DebugFormatting.swift */,
+				0CF0B49E250E9EBBF43BC1DAF6060AD0 /* Deprecations.swift */,
+				CEECA29777B0E7EC9EF400E8005B6BFA /* Entity.swift */,
+				373DD2CB9B8C2752F4549AB29A3839A5 /* Error.swift */,
+				EB25F0E0991CA39DE4A873952AED9D92 /* GCD+Siesta.swift */,
+				0AAFD0EC379F47BC9FDCC8F15D916F44 /* Info-iOS.plist */,
+				1A85E622E9D4E1D0B2D62C881C6605FA /* Info-OSX.plist */,
+				FA038C426A991ADE4B5F18994819C38B /* Logging.swift */,
+				F43DC19C850ADF8918A74F94290E71E1 /* Networking.swift */,
+				06F2458336F29AB18E5D8A12A19C07FE /* Networking-NSURLSession.swift */,
+				8C5F05AA96CE72AA3BC3E3E8A2935990 /* NetworkRequest.swift */,
+				A87692FD2D94F3159ABB78EDCF3292D4 /* NSURL+Siesta.swift */,
+				EDEC96AC86899E0B68CC797509906C25 /* PersistentCache.swift */,
+				ADA0CE93875CA39D825BCEEB2C340C0C /* Progress.swift */,
+				6162228A83A3FD15CC2EF1356E4B8927 /* ProgressTracker.swift */,
+				61A9ACA0B507BDD3C5A82DE3B3D20D20 /* Regex+Siesta.swift */,
+				83A5F18EC037B0CCA2E18E3CC9424319 /* RemoteImageView.swift */,
+				F00B9B40CAECFA3606F1197750994320 /* Request.swift */,
+				1269B890FC8EC3A81C2DD74DFED272BA /* RequestCallbacks.swift */,
+				44615711C8B91ED9DEB68D44682AB1B2 /* RequestCreation.swift */,
+				B951BD11159FC2374DF63D56AB3A3F8A /* Resource.swift */,
+				C24BB2B63862799502052CD9E5A1D5F7 /* ResourceObserver.swift */,
+				D4A3AED7C15F9288EB19D10F3B6D5EC2 /* ResourceStatusOverlay.swift */,
+				A5BFB825AF788DFFA22076A3F92B6F22 /* ResourceStatusOverlay.xib */,
+				0AC8AD6049A9CF37B01C999DE757840B /* ResponseTransformer.swift */,
+				1EDEE1E8A2106AE3699828914DEE2684 /* Service.swift */,
+				D5A3259A03C0C3C9B320A37C7F816117 /* Siesta.h */,
+				C140217D44D3844C118188D8A4FFF9C4 /* Siesta-ObjC.swift */,
+				5C03149B1898CF40BD415DE016824729 /* String+Siesta.swift */,
+				6B885B57F57C5C8FF92D600A87316C17 /* WeakCache.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				46983A4CF216868D5F7C3B1C2E87D9FC /* Pods */,
+				C29F160AA43D1A6B25012CA39601D6A2 /* Products */,
+				605C6396B2A57019E1AFB93DB187DF57 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ADB7958FE14F63802FBAC1570AD5BDDC /* Pods-TheCountedViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B88EA7BB3886711375A4DA75D8AAE64 /* Info.plist */,
+				1B9518CBC7B4188BB68A30D4EC0CC0C2 /* Pods-TheCountedViewerUITests.modulemap */,
+				E0B219FE8BD5C4CE86295B08FAF3718A /* Pods-TheCountedViewerUITests-acknowledgements.markdown */,
+				6DFA4808C1CE585FA837AA5AEA40AFAB /* Pods-TheCountedViewerUITests-acknowledgements.plist */,
+				1CF5F1FC1C044E3CB25F1B44A5C42BEC /* Pods-TheCountedViewerUITests-dummy.m */,
+				D141CC18FBC4AEE98EF88B620297F98C /* Pods-TheCountedViewerUITests-frameworks.sh */,
+				FFD9911C13934E08AA83F6010DF225BB /* Pods-TheCountedViewerUITests-resources.sh */,
+				2D14B9696E8D1027F0BEBF7D80160D4C /* Pods-TheCountedViewerUITests-umbrella.h */,
+				0C628713D7A94954E11CF4491E47F22E /* Pods-TheCountedViewerUITests.debug.xcconfig */,
+				69B9623F2519BCA0D312E07998C8260C /* Pods-TheCountedViewerUITests.release.xcconfig */,
+			);
+			name = "Pods-TheCountedViewerUITests";
+			path = "Target Support Files/Pods-TheCountedViewerUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0B50CB2CBA7B1026D6EBB8CA9A0361 /* Pods-TheCountedViewer */ = {
+			isa = PBXGroup;
+			children = (
+				F7764FCD186DC3B324612561F4759FDA /* Info.plist */,
+				51F12F81880C04850756A76F9F6EE3B2 /* Pods-TheCountedViewer.modulemap */,
+				7F46A85E0A984470D56110661FB04B04 /* Pods-TheCountedViewer-acknowledgements.markdown */,
+				6B4E4389C5E9A7247FDE475B6420C043 /* Pods-TheCountedViewer-acknowledgements.plist */,
+				C06E272A6261FE4AF30AA4D959E2F1CF /* Pods-TheCountedViewer-dummy.m */,
+				8857BA815C40A191A2DD4D27AD666BB5 /* Pods-TheCountedViewer-frameworks.sh */,
+				F50A12A8ED0F9771E7090B0AB86BBF19 /* Pods-TheCountedViewer-resources.sh */,
+				6A9E729300D5D10529DDF577C9315201 /* Pods-TheCountedViewer-umbrella.h */,
+				2C52284808DB1607A9BC8FA2CB09D75F /* Pods-TheCountedViewer.debug.xcconfig */,
+				78BBA065A6DF8A72BC2B9BAC62E01A25 /* Pods-TheCountedViewer.release.xcconfig */,
+			);
+			name = "Pods-TheCountedViewer";
+			path = "Target Support Files/Pods-TheCountedViewer";
+			sourceTree = "<group>";
+		};
+		C29F160AA43D1A6B25012CA39601D6A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC8C5B794E02B6E33BF20D123EDBEE2 /* Pods_TheCountedViewer.framework */,
+				151BF9A3FF77F312E0C21A7892A90ECD /* Pods_TheCountedViewerTests.framework */,
+				37C2818B69257EC1D5DEBA27F46A547F /* Pods_TheCountedViewerUITests.framework */,
+				270F2AE72C203183D65697C335163800 /* Siesta.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30AA23B9FE34B9FEBF494761A7583EBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748312C41A9697B5AA7EFB2B9EB24FBC /* Siesta-umbrella.h in Headers */,
+				91772D6EDD634972A4FD94FFD196EFD0 /* Siesta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51292593336B52228C07C7CA6FF9914D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AA6D2BAE1ABEE9FC40D969A774B6E7 /* Pods-TheCountedViewerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB2FE322D05F1B43B00B623110D29E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9011540382FD1DA9EA7846C7E794D4 /* Pods-TheCountedViewer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27D5FC78D8B2B7047D980829C2BC784 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA35CC073C68CEB74B2B4E50F144CA8 /* Pods-TheCountedViewerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2ABEA40AFCFA14AEFB3F0CDF6BD1E0E5 /* Pods-TheCountedViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567000B540D5221B82B9DD8741CCE0BF /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewerUITests" */;
+			buildPhases = (
+				01EF05A617759E10E2A37736F61BB5D1 /* Sources */,
+				870AAC540BDB42C942F710138051F809 /* Frameworks */,
+				C27D5FC78D8B2B7047D980829C2BC784 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheCountedViewerUITests";
+			productName = "Pods-TheCountedViewerUITests";
+			productReference = 37C2818B69257EC1D5DEBA27F46A547F /* Pods_TheCountedViewerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B0E4ACB8D0909B02CFD64C8DD22A3FC /* Siesta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B997BB545C8E9A83569EC2DB70D214 /* Build configuration list for PBXNativeTarget "Siesta" */;
+			buildPhases = (
+				8C628295EE7170105495D7CBC209BDF6 /* Sources */,
+				E4297572F097DC1E636C0912D46EABC7 /* Frameworks */,
+				052365A945697282D56252D528D36E48 /* Resources */,
+				30AA23B9FE34B9FEBF494761A7583EBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siesta;
+			productName = Siesta;
+			productReference = 270F2AE72C203183D65697C335163800 /* Siesta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBEB1F9AF4145F849C2C1DE74CA6CFE8 /* Pods-TheCountedViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFF572F3C9A49FC39FB5918E7B2822A /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewer" */;
+			buildPhases = (
+				586ACF9422459FB67DFF0ABBA3238E8E /* Sources */,
+				9973C22A9FAB67C996167D912254764C /* Frameworks */,
+				5BB2FE322D05F1B43B00B623110D29E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B09295516568DBC28E77F7E7E0F3BD4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TheCountedViewer";
+			productName = "Pods-TheCountedViewer";
+			productReference = AEC8C5B794E02B6E33BF20D123EDBEE2 /* Pods_TheCountedViewer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA071FA701131E3FE618D6DD769E6916 /* Pods-TheCountedViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9204CA01129CA27FD122E86BC3208C8 /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewerTests" */;
+			buildPhases = (
+				685E346D4B6C86A65D332FBFE087DB01 /* Sources */,
+				FA5FAD9CA0FE55134AC3E5BE1BB2FA9C /* Frameworks */,
+				51292593336B52228C07C7CA6FF9914D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheCountedViewerTests";
+			productName = "Pods-TheCountedViewerTests";
+			productReference = 151BF9A3FF77F312E0C21A7892A90ECD /* Pods_TheCountedViewerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C29F160AA43D1A6B25012CA39601D6A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBEB1F9AF4145F849C2C1DE74CA6CFE8 /* Pods-TheCountedViewer */,
+				FA071FA701131E3FE618D6DD769E6916 /* Pods-TheCountedViewerTests */,
+				2ABEA40AFCFA14AEFB3F0CDF6BD1E0E5 /* Pods-TheCountedViewerUITests */,
+				6B0E4ACB8D0909B02CFD64C8DD22A3FC /* Siesta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		052365A945697282D56252D528D36E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FDB929A603E16FEE204FC0EF3CCC26 /* ResourceStatusOverlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01EF05A617759E10E2A37736F61BB5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAAEECC480CAEEC4A7AE84D00F769DF /* Pods-TheCountedViewerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586ACF9422459FB67DFF0ABBA3238E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AC51B3280E25A7663F66FCCE7AF485 /* Pods-TheCountedViewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E346D4B6C86A65D332FBFE087DB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0264DBAE9AE54D90FF87820400C90D20 /* Pods-TheCountedViewerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C628295EE7170105495D7CBC209BDF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658258407DB95AA239C28D8013EBC23C /* ARC+Siesta.swift in Sources */,
+				95F445F528DD09272C08AAAE3CAB544F /* Collection+Siesta.swift in Sources */,
+				054BE00AAB707C828EDBD40BF9CCC70D /* Configuration.swift in Sources */,
+				F7E3F0033FA03E18960B36185B165800 /* ConfigurationPatternConvertible.swift in Sources */,
+				FA72C7B645D2AD46B447BA74492FC7CB /* DebugFormatting.swift in Sources */,
+				249D91A364A14D56027FC2F3EFDAF49C /* Deprecations.swift in Sources */,
+				49AEEC5A0310B771CCDE72B7D783169C /* Entity.swift in Sources */,
+				E34D2463F51C30964E2E286F29E81FD1 /* Error.swift in Sources */,
+				ECC20BF47435BDB46F9BD9E45C4CE5DF /* GCD+Siesta.swift in Sources */,
+				BA4984B31B03EFBE475CEC4615E6DE23 /* Info-iOS.plist in Sources */,
+				11F9B5892C1B1D9B496431AECB4C62AD /* Info-OSX.plist in Sources */,
+				E2AA55A1229001B63BD523B0AD6CD63D /* Logging.swift in Sources */,
+				C75687B6F0F80EAD86E277E23CBC6ADC /* Networking-NSURLSession.swift in Sources */,
+				BD1250197D4C235F28A85077DDAC9A83 /* Networking.swift in Sources */,
+				DA7DF8816056C3BC851C5C8C330264FB /* NetworkRequest.swift in Sources */,
+				E68D33BE09827A183C17B9B919E67146 /* NSURL+Siesta.swift in Sources */,
+				5B3186C4E50556DF207CFC1C8521D1C7 /* PersistentCache.swift in Sources */,
+				B718F6148C9C4536E720D415D56DCAFE /* Progress.swift in Sources */,
+				E13F4276848B6B0CAED8485BB5EDC37A /* ProgressTracker.swift in Sources */,
+				84A853BEE372C2064589BC98C9CCD7F8 /* Regex+Siesta.swift in Sources */,
+				C976FE7CC82B5D1508369A18AF9932B0 /* RemoteImageView.swift in Sources */,
+				05417132AEDE9E79EE81658E3C9436CB /* Request.swift in Sources */,
+				B457867B4795331926D3FE28D6A5C83C /* RequestCallbacks.swift in Sources */,
+				C1C739F2280D22DC3753BCA97D24054A /* RequestCreation.swift in Sources */,
+				2B5ED50338E0D5C38A7511BAE134976A /* Resource.swift in Sources */,
+				357F3B76935786FB7B585A6A61A36237 /* ResourceObserver.swift in Sources */,
+				867D8E92F122B9FCA80419D0BC808E92 /* ResourceStatusOverlay.swift in Sources */,
+				44F3F2C9CC30279ACA20750974A019FD /* ResourceStatusOverlay.xib in Sources */,
+				B276417E67541F848CB00046BBABAD1D /* ResponseTransformer.swift in Sources */,
+				EDCB296F24655EE1AC884A6596421806 /* Service.swift in Sources */,
+				B15B176105200E48BD22566772701993 /* Siesta-dummy.m in Sources */,
+				7193A945A2F4203E8D37CFC593A5DB75 /* Siesta-ObjC.swift in Sources */,
+				DA7B76A62E73C70B8677237A27DE1FEF /* String+Siesta.swift in Sources */,
+				00912E93DD7F881DB216ED42E565BBDB /* WeakCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B09295516568DBC28E77F7E7E0F3BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Siesta;
+			target = 6B0E4ACB8D0909B02CFD64C8DD22A3FC /* Siesta */;
+			targetProxy = 942FF699206E600BDDE70C23A8C20A20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10221CE9ADE869E1EECCDA1C4692C96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D3EE92359FF29170F776F51AB1C5E1 /* Siesta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C23DC7948729C824383F0B7EEA95806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C628713D7A94954E11CF4491E47F22E /* Pods-TheCountedViewerUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewerUITests/Pods-TheCountedViewerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D8D11F6CCD4B03BEFA03A0732B792EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C52284808DB1607A9BC8FA2CB09D75F /* Pods-TheCountedViewer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		584FECD6CBD284F2EE3997728940FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B9623F2519BCA0D312E07998C8260C /* Pods-TheCountedViewerUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewerUITests/Pods-TheCountedViewerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66435F5CF41EA8CB6ECF7AAB39DB8F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831D13A9A5EE981F43D9BE4BBFDA592B /* Pods-TheCountedViewerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CA982EA541041BDE2920ACC408F0529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D3EE92359FF29170F776F51AB1C5E1 /* Siesta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8EEDE33B68C57C53835A99756941797A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BBA065A6DF8A72BC2B9BAC62E01A25 /* Pods-TheCountedViewer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5BB0C966A29B4F0DDE67459686C6BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765BC8A5118BAE97ECD1C99E20031846 /* Pods-TheCountedViewerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TheCountedViewerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TheCountedViewerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567000B540D5221B82B9DD8741CCE0BF /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C23DC7948729C824383F0B7EEA95806 /* Debug */,
+				584FECD6CBD284F2EE3997728940FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B997BB545C8E9A83569EC2DB70D214 /* Build configuration list for PBXNativeTarget "Siesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10221CE9ADE869E1EECCDA1C4692C96D /* Debug */,
+				8CA982EA541041BDE2920ACC408F0529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFF572F3C9A49FC39FB5918E7B2822A /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D8D11F6CCD4B03BEFA03A0732B792EC /* Debug */,
+				8EEDE33B68C57C53835A99756941797A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9204CA01129CA27FD122E86BC3208C8 /* Build configuration list for PBXNativeTarget "Pods-TheCountedViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BB0C966A29B4F0DDE67459686C6BDE /* Debug */,
+				66435F5CF41EA8CB6ECF7AAB39DB8F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
