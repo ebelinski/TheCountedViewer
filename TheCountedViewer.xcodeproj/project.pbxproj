@@ -15,6 +15,7 @@
 		B65319AD1D3073D400CCBE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65319AB1D3073D400CCBE9C /* LaunchScreen.storyboard */; };
 		B65319B81D3073D400CCBE9C /* TheCountedViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319B71D3073D400CCBE9C /* TheCountedViewerTests.swift */; };
 		B65319C31D3073D400CCBE9C /* TheCountedViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319C21D3073D400CCBE9C /* TheCountedViewerUITests.swift */; };
+		B65319D11D31762B00CCBE9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65319D01D31762B00CCBE9C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B65319BE1D3073D400CCBE9C /* TheCountedViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheCountedViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65319C21D3073D400CCBE9C /* TheCountedViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCountedViewerUITests.swift; sourceTree = "<group>"; };
 		B65319C41D3073D400CCBE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65319D01D31762B00CCBE9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65319D11D31762B00CCBE9C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		B65319941D3073D400CCBE9C = {
 			isa = PBXGroup;
 			children = (
+				B65319D01D31762B00CCBE9C /* MapKit.framework */,
 				B653199F1D3073D400CCBE9C /* TheCountedViewer */,
 				B65319B61D3073D400CCBE9C /* TheCountedViewerTests */,
 				B65319C11D3073D400CCBE9C /* TheCountedViewerUITests */,
