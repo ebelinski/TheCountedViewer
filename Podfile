@@ -6,6 +6,7 @@ target 'TheCountedViewer' do
   use_frameworks!
 
   pod 'Siesta', '>=1.0-beta.7'
+  pod 'SwiftyJSON', '~> 2.3'
 
   target 'TheCountedViewerTests' do
     inherit! :search_paths
