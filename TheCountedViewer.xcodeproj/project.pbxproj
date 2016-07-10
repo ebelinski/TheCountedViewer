@@ -19,6 +19,7 @@
 		B65319B81D3073D400CCBE9C /* TheCountedViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319B71D3073D400CCBE9C /* TheCountedViewerTests.swift */; };
 		B65319C31D3073D400CCBE9C /* TheCountedViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319C21D3073D400CCBE9C /* TheCountedViewerUITests.swift */; };
 		B65319D11D31762B00CCBE9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65319D01D31762B00CCBE9C /* MapKit.framework */; };
+		B65319D51D32936300CCBE9C /* Killing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319D41D32936300CCBE9C /* Killing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B65319C21D3073D400CCBE9C /* TheCountedViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCountedViewerUITests.swift; sourceTree = "<group>"; };
 		B65319C41D3073D400CCBE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65319D01D31762B00CCBE9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B65319D41D32936300CCBE9C /* Killing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Killing.swift; sourceTree = "<group>"; };
 		BA1E32C157D0196877CF3687 /* Pods-TheCountedViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		DEA79D1B525EED860297CB0A /* Pods-TheCountedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.release.xcconfig"; sourceTree = "<group>"; };
 		FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			children = (
 				B65319A01D3073D400CCBE9C /* AppDelegate.swift */,
 				B65319A21D3073D400CCBE9C /* MapViewController.swift */,
+				B65319D41D32936300CCBE9C /* Killing.swift */,
 				B65319A41D3073D400CCBE9C /* AboutViewController.swift */,
 				B65319A61D3073D400CCBE9C /* Main.storyboard */,
 				B65319A91D3073D400CCBE9C /* Assets.xcassets */,
@@ -437,6 +440,7 @@
 			files = (
 				B65319A51D3073D400CCBE9C /* AboutViewController.swift in Sources */,
 				B65319A11D3073D400CCBE9C /* AppDelegate.swift in Sources */,
+				B65319D51D32936300CCBE9C /* Killing.swift in Sources */,
 				B65319A31D3073D400CCBE9C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
