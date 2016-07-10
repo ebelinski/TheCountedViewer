@@ -9,7 +9,7 @@ class MapViewController: UIViewController, ResourceObserver {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    API.resource("/").addObserver(self)
+    API.resource("/counted").addObserver(self)
   }
 
   func resourceChanged(resource: Resource, event: ResourceEvent) {

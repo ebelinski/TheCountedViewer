@@ -1,7 +1,7 @@
 import UIKit
 import Siesta
 
-let API = Service(baseURL: "https://thecountedapi.com/api/counted")
+let API = Service(baseURL: "https://thecountedapi.com/api")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
