@@ -136,9 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				B65319A01D3073D400CCBE9C /* AppDelegate.swift */,
-				B65319A21D3073D400CCBE9C /* MapViewController.swift */,
-				B65319D41D32936300CCBE9C /* Killing.swift */,
-				B65319A41D3073D400CCBE9C /* AboutViewController.swift */,
+				B65319D61D3293D000CCBE9C /* Models */,
+				B65319D71D3293D900CCBE9C /* Controllers */,
 				B65319A61D3073D400CCBE9C /* Main.storyboard */,
 				B65319A91D3073D400CCBE9C /* Assets.xcassets */,
 				B65319AB1D3073D400CCBE9C /* LaunchScreen.storyboard */,
@@ -163,6 +162,23 @@
 				B65319C41D3073D400CCBE9C /* Info.plist */,
 			);
 			path = TheCountedViewerUITests;
+			sourceTree = "<group>";
+		};
+		B65319D61D3293D000CCBE9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B65319D41D32936300CCBE9C /* Killing.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B65319D71D3293D900CCBE9C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B65319A21D3073D400CCBE9C /* MapViewController.swift */,
+				B65319A41D3073D400CCBE9C /* AboutViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D4DB8AD348556BE9BD5C3CEB /* Frameworks */ = {
