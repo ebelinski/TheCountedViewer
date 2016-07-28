@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
     API.configureTransformer("/counted") {
-      ($0.content as JSON).arrayValue.map(Killing.init)
+      ($0.content as JSON).arrayValue.map(Incident.init)
     }
 
     return true

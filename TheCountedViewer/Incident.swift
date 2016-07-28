@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-struct Killing {
+struct Incident {
   let name: String?
 
   init(json: JSON) {
