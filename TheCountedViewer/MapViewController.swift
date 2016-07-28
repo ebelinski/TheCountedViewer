@@ -22,6 +22,13 @@ class MapViewController: UIViewController, ResourceObserver {
   }
 
   func resourceChanged(resource: Resource, event: ResourceEvent) {
+    print("resourceChanged")
+
+    if let error = resource.latestError {
+      print(error.userMessage)
+      return
+    }
+
     if let content: [Incident] = resource.typedContent() {
       print("content exists")
       incidents = content
