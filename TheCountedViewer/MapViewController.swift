@@ -11,7 +11,7 @@ class MapViewController: UIViewController, ResourceObserver {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    API.resource("/counted").addObserver(self)
+    API.resource("/counted").addObserver(self).loadIfNeeded()
   }
 
   func resourceChanged(resource: Resource, event: ResourceEvent) {
