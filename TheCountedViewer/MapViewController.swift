@@ -6,6 +6,8 @@ class MapViewController: UIViewController, ResourceObserver {
 
   @IBOutlet weak var mapView: MKMapView!
 
+  var killings: [Killing] = []
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -13,7 +15,12 @@ class MapViewController: UIViewController, ResourceObserver {
   }
 
   func resourceChanged(resource: Resource, event: ResourceEvent) {
-    print("resource changed")
+    if let content: [Killing] = resource.typedContent() {
+      print("content exists")
+      killings = content
+    }
+
+    print(killings.count)
   }
 
 }
