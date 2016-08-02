@@ -14,4 +14,25 @@ struct CoordinateManager {
     return queue
   }()
 
+  func coordinateForAddress(address: String, completion: ((coordinate: CLLocationCoordinate2D) -> Void)) {
+    if let coordinate = coordinateCache.objectForKey(address) as? CLLocationCoordinate2D {
+      print("Found in cache")
+      completion(coordinate: coordinate)
+    }
+
+    generateCoordinateOperationQueue.addOperation(NSBlockOperation() {
+      CLGeocoder().geocodeAddressString(address) {
+        placemarks, error in
+
+        if let error = error {
+          print(error)
+          return
+        }
+
+        guard let coordinate = placemarks?.last?.location?.coordinate else { return }
+        completion(coordinate: coordinate)
+      }
+      })
+  }
+
 }
