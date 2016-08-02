@@ -21,6 +21,14 @@ class MapViewController: UIViewController, ResourceObserver {
     resource.loadIfNeeded()
   }
 
+  override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+    super.motionEnded(motion, withEvent: event)
+
+    if motion != .MotionShake { return }
+
+    refreshMap()
+  }
+
   func resourceChanged(resource: Resource, event: ResourceEvent) {
     if let errorMessage = resource.latestError?.userMessage {
       print(errorMessage)
