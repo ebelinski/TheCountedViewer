@@ -32,6 +32,8 @@ class MapViewController: UIViewController, ResourceObserver {
   }
 
   private func refreshMap() {
+    mapView.removeAnnotations(mapView.annotations)
+
     for incident in incidents {
       let address = (incident.streetAddress ?? "") + ", "
                   + (incident.city ?? "") + ", "
