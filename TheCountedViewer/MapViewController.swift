@@ -47,7 +47,12 @@ class MapViewController: UIViewController, ResourceObserver {
           return
         }
 
-        guard let location = placemarks?.last?.location else { return }
+        guard let coordinate = placemarks?.last?.location?.coordinate else { return }
+
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        print(coordinate)
+        self.mapView.addAnnotation(annotation)
       }
     }
   }
