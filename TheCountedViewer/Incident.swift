@@ -5,6 +5,7 @@ struct Incident {
   let name: String?
   let age: Int?
   let ethnicity: Ethnicity
+  let streetAddress, city, state: String?
 
   init(json: JSON) {
     name = json["name"].string
@@ -24,5 +25,9 @@ struct Incident {
     } else {
       ethnicity = .Unknown
     }
+
+    streetAddress = json["address"].string
+    city = json["city"].string
+    state = json["state"].string
   }
 }
