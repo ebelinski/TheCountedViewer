@@ -27,11 +27,7 @@ class MapViewController: UIViewController, ResourceObserver {
       return
     }
 
-    if let content: [Incident] = resource.typedContent() {
-      print("content exists")
-      incidents = content
-    }
+    incidents = resource.typedContent() ?? []
   }
 
 }
-
