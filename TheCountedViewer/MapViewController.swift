@@ -32,7 +32,24 @@ class MapViewController: UIViewController, ResourceObserver {
   }
 
   private func refreshMap() {
+    let coder = CLGeocoder()
 
+    for incident in incidents {
+      let addressString = (incident.streetAddress ?? "") + " "
+                        + (incident.city ?? "") + " "
+                        + (incident.state ?? "")
+
+      coder.geocodeAddressString(addressString) {
+        placemarks, error in
+
+        if let error = error {
+          print(error)
+          return
+        }
+
+        guard let location = placemarks?.last?.location else { return }
+      }
+    }
   }
 
 }
