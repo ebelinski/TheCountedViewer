@@ -2,10 +2,12 @@ import Foundation
 import SwiftyJSON
 
 struct Incident {
+
   let name: String?
   let age: Int?
   let ethnicity: Ethnicity
   let streetAddress, city, state: String?
+  let month, day, year: Int?
 
   init(json: JSON) {
     name = json["name"].string
@@ -29,5 +31,10 @@ struct Incident {
     streetAddress = json["address"].string
     city = json["city"].string
     state = json["state"].string
+
+    month = (json["month"].string ?? "").monthNameToInt()
+    day = Int(json["day"].string ?? "")
+    year = Int(json["year"].string ?? "")
   }
+  
 }
