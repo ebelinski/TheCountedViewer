@@ -32,7 +32,7 @@ struct CoordinateManager {
         guard let coordinate = placemarks?.last?.location?.coordinate else { return }
         completion(coordinate: coordinate)
       }
-      })
+    })
   }
 
 }
