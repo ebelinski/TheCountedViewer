@@ -8,6 +8,8 @@ struct CoordinateManager {
   // Stores coordinate objects for addresses for the duration of the app session
   var coordinateCache = [String: CLLocationCoordinate2D]()
 
+  var badAddresses = [String]()
+
   let generateCoordinateOperationQueue: NSOperationQueue = {
     let queue = NSOperationQueue()
     queue.maxConcurrentOperationCount = 1
@@ -20,11 +22,17 @@ struct CoordinateManager {
       completion(coordinate: coordinate)
     }
 
+    if badAddresses.contains(address) {
+      print("Bad address")
+      return
+    }
+
     generateCoordinateOperationQueue.addOperation(NSBlockOperation() {
       CLGeocoder().geocodeAddressString(address) {
         placemarks, error in
 
         if let error = error {
+          self.badAddresses.append(address)
           print(error)
           return
         }
