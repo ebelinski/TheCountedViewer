@@ -35,8 +35,8 @@ class MapViewController: UIViewController, ResourceObserver {
     let coder = CLGeocoder()
 
     for incident in incidents {
-      let addressString = (incident.streetAddress ?? "") + " "
-                        + (incident.city ?? "") + " "
+      let addressString = (incident.streetAddress ?? "") + ", "
+                        + (incident.city ?? "") + ", "
                         + (incident.state ?? "")
 
       coder.geocodeAddressString(addressString) {
