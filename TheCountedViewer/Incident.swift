@@ -9,11 +9,7 @@ struct Incident {
   init(json: JSON) {
     name = json["name"].string
 
-    if let ageString = json["age"].string {
-      age = Int(ageString)
-    } else {
-      age = nil
-    }
+    age = Int(json["age"].string ?? "")
 
     if let raceString = json["race"].string {
       switch raceString {
