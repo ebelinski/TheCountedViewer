@@ -10,6 +10,7 @@
 		43A8A0066F844F5E0104A6E8 /* Pods_TheCountedViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */; };
 		611DAF09917F5C9A96EB66A5 /* Pods_TheCountedViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4C21E1CF1B1A8A6C01933 /* Pods_TheCountedViewer.framework */; };
 		983448DEDBC21772C86F7CB6 /* Pods_TheCountedViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */; };
+		B63C6F5C1D504B570061C6E7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C6F5B1D504B570061C6E7 /* Enums.swift */; };
 		B65319A11D3073D400CCBE9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A01D3073D400CCBE9C /* AppDelegate.swift */; };
 		B65319A31D3073D400CCBE9C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A21D3073D400CCBE9C /* MapViewController.swift */; };
 		B65319A51D3073D400CCBE9C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65319A41D3073D400CCBE9C /* AboutViewController.swift */; };
@@ -46,6 +47,7 @@
 		768D30BD001A6C968D54FA98 /* Pods-TheCountedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewer/Pods-TheCountedViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheCountedViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960A17F7FCBF579C4B11D640 /* Pods-TheCountedViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCountedViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCountedViewerTests/Pods-TheCountedViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B63C6F5B1D504B570061C6E7 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		B653199D1D3073D400CCBE9C /* TheCountedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCountedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65319A01D3073D400CCBE9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65319A21D3073D400CCBE9C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B65319A01D3073D400CCBE9C /* AppDelegate.swift */,
+				B63C6F5B1D504B570061C6E7 /* Enums.swift */,
 				B65319D61D3293D000CCBE9C /* Models */,
 				B65319D71D3293D900CCBE9C /* Controllers */,
 				B65319A61D3073D400CCBE9C /* Main.storyboard */,
@@ -456,6 +459,7 @@
 			files = (
 				B65319A51D3073D400CCBE9C /* AboutViewController.swift in Sources */,
 				B65319A11D3073D400CCBE9C /* AppDelegate.swift in Sources */,
+				B63C6F5C1D504B570061C6E7 /* Enums.swift in Sources */,
 				B65319D51D32936300CCBE9C /* Incident.swift in Sources */,
 				B65319A31D3073D400CCBE9C /* MapViewController.swift in Sources */,
 			);
