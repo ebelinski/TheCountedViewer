@@ -3,10 +3,10 @@ import MapKit
 
 struct CoordinateManager {
 
-  static let sharedInstance = CoordinateManager()
+  static var sharedInstance = CoordinateManager()
 
   // Stores coordinate objects for addresses for the duration of the app session
-  let coordinateCache = NSCache()
+  var coordinateCache = [String: CLLocationCoordinate2D]()
 
   let generateCoordinateOperationQueue: NSOperationQueue = {
     let queue = NSOperationQueue()
@@ -14,8 +14,8 @@ struct CoordinateManager {
     return queue
   }()
 
-  func coordinateForAddress(address: String, completion: ((coordinate: CLLocationCoordinate2D) -> Void)) {
-    if let coordinate = coordinateCache.objectForKey(address) as? CLLocationCoordinate2D {
+  mutating func coordinateForAddress(address: String, completion: ((coordinate: CLLocationCoordinate2D) -> Void)) {
+    if let coordinate = coordinateCache[address] {
       print("Found in cache")
       completion(coordinate: coordinate)
     }
@@ -30,6 +30,7 @@ struct CoordinateManager {
         }
 
         guard let coordinate = placemarks?.last?.location?.coordinate else { return }
+        self.coordinateCache[address] = coordinate
         completion(coordinate: coordinate)
       }
     })
