@@ -32,26 +32,17 @@ class MapViewController: UIViewController, ResourceObserver {
   }
 
   private func refreshMap() {
-    let coder = CLGeocoder()
-
     for incident in incidents {
-      let addressString = (incident.streetAddress ?? "") + ", "
-                        + (incident.city ?? "") + ", "
-                        + (incident.state ?? "")
+      let address = (incident.streetAddress ?? "") + ", "
+                  + (incident.city ?? "") + ", "
+                  + (incident.state ?? "")
 
-      coder.geocodeAddressString(addressString) {
-        placemarks, error in
-
-        if let error = error {
-          print(error)
-          return
-        }
-
-        guard let coordinate = placemarks?.last?.location?.coordinate else { return }
+      CoordinateManager.sharedInstance.coordinateForAddress(address) {
+        coordinate in
 
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
-        print(coordinate)
+        annotation.title = "\(incident.name ?? "") (\(address))"
         self.mapView.addAnnotation(annotation)
       }
     }
