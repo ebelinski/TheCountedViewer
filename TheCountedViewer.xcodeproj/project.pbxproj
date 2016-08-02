@@ -116,7 +116,6 @@
 		B65319941D3073D400CCBE9C = {
 			isa = PBXGroup;
 			children = (
-				B65319D01D31762B00CCBE9C /* MapKit.framework */,
 				B653199F1D3073D400CCBE9C /* TheCountedViewer */,
 				B65319B61D3073D400CCBE9C /* TheCountedViewerTests */,
 				B65319C11D3073D400CCBE9C /* TheCountedViewerUITests */,
@@ -190,6 +189,7 @@
 		D4DB8AD348556BE9BD5C3CEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B65319D01D31762B00CCBE9C /* MapKit.framework */,
 				6AB4C21E1CF1B1A8A6C01933 /* Pods_TheCountedViewer.framework */,
 				8E88BB1745E93BC05B539B49 /* Pods_TheCountedViewerTests.framework */,
 				FB4F25AB63213990FE55F8C9 /* Pods_TheCountedViewerUITests.framework */,
