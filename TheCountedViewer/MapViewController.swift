@@ -28,6 +28,11 @@ class MapViewController: UIViewController, ResourceObserver {
     }
 
     incidents = resource.typedContent() ?? []
+    refreshMap()
+  }
+
+  private func refreshMap() {
+
   }
 
 }
